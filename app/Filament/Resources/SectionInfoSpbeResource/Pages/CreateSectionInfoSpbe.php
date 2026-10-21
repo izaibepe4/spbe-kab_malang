@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Filament\Resources\SectionInfoSpbeResource\Pages;
+
+use App\Filament\Resources\SectionInfoSpbeResource;
+use Filament\Resources\Pages\CreateRecord;
+
+class CreateSectionInfoSpbe extends CreateRecord
+{
+    protected static string $resource = SectionInfoSpbeResource::class;
+
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
+}

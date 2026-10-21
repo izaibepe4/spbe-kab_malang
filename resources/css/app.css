@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
+@source "../../storage/framework/views/*.php";
+@source "../**/*.blade.php";
+@source "../**/*.js";
+
+@theme {
+    --color-brandBlue: #1c2b78;
+    --color-brandAmber: #ffa84a;
+    --color-footer: rgb(255 255 255 / 0.18);
+
+    /* Body & Heading font tokens */
+    --font-body: "Instrument Sans", ui-sans-serif, system-ui, -apple-system,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-heading: "Poppins", ui-sans-serif, system-ui, -apple-system,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+}
+
+/* Body pakai Instrument Sans */
+@layer base {
+    html {
+        font-family: var(--font-body);
+    }
+    /* Heading pakai Poppins */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-heading);
+    }
+    .font-poppins {
+        font-family: "Poppins", ui-sans-serif, system-ui, sans-serif;
+        font-weight: 600;
+    }
+}
+
+/* util & komponen yang sudah dipakai */
+@layer components {
+    .footer-wrap {
+        @apply mx-auto w-full max-w-[1200px] px-6;
+    }
+    .footer-top {
+        @apply flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pb-8 border-b border-footer;
+    }
+    .footer-col-title {
+        @apply font-semibold mb-3;
+    }
+    .footer-col {
+        @apply text-sm;
+    }
+    .footer-muted {
+        @apply text-white/70;
+    }
+    .footer-link {
+        @apply flex items-center gap-2 text-white/80 hover:text-white transition;
+    }
+    .footer-link img {
+        @apply w-[12px] h-[12px] object-contain opacity-70 group-hover:opacity-100 transition;
+    }
+    .wrap {
+        @apply max-w-[1200px] mx-auto px-6;
+    }
+    .section {
+        @apply py-12 md:py-16;
+    } /* ruang vertikal besar */
+    .heading {
+        @apply text-3xl md:text-4xl font-semibold tracking-tight;
+    }
+    .lead {
+        @apply text-slate-600 text-base md:text-[17px] leading-relaxed md:leading-8 max-w-3xl;
+    }
+
+    /* Accordion lega */
+    .acc {
+        @apply bg-white rounded-2xl shadow-sm border border-slate-200/60;
+    }
+    .acc-sum {
+        @apply px-6 py-5 flex items-center justify-between cursor-pointer select-none rounded-2xl;
+    }
+    .acc-pan {
+        @apply px-6 py-5 bg-slate-50 rounded-b-2xl border-t border-slate-200/60 space-y-3;
+    }
+
+    /* Item list lembut */
+    .item {
+        @apply rounded-xl p-4 md:p-5 hover:bg-slate-50 transition;
+    }
+    .item-t {
+        @apply text-slate-800 font-medium;
+    }
+    .item-a {
+        @apply text-blue-600 hover:text-blue-700 font-medium no-underline;
+    }
+}

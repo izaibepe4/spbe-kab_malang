@@ -1,0 +1,38 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - app/
+    
+    # Level 0-9, mulai dari 0 (paling permisif) ke 9 (paling strict)
+    level: 4
+    
+    ignoreErrors:
+        # Ignore Filament generated code
+        - '#Call to an undefined method Filament\\#'
+        - '#Access to an undefined property Filament\\#'
+        # Ignore common Laravel/Filament patterns
+        - '#Cannot access property.*on Illuminate\\\\Database\\\\Eloquent\\\\Model#'
+        - '#Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable#'
+        - '#Property .* is never read, only written#'
+        - '#Right side of && is always true#'
+        - '#Left side of && is always true#'
+        - '#Comparison operation .* is always true#'
+        - '#Ternary operator condition is always true#'
+        - '#Offset .* on .* always exists and is not nullable#'
+        - '#Variable .* on left side of .* always exists and is not nullable#'
+        - '#Parameter .* of function view expects view-string#'
+        - '#Called .*env.* outside of the config directory#'
+        - '#Relation .* is not found in .* model#'
+        - '#Method .* is unused#'
+        - '#Trait .* is used zero times and is not analysed#'
+        - '#Call to function method_exists.* will always evaluate to true#'
+        - '#Parameter .* of function abort_unless expects bool#'
+    
+    excludePaths:
+        - app/Console/Kernel.php (?)
+        - app/Exceptions/Handler.php (?)
+        - app/Filament/**/*.php
+    
+    reportUnmatchedIgnoredErrors: false

@@ -1,0 +1,441 @@
+/* Accessibility Styles */
+
+/* Font Size Controls - Exclude SVG, images, and specific elements */
+body.a11y-font-small {
+    font-size: 14px !important;
+}
+
+/* Apply to text elements only, exclude SVG and media */
+body.a11y-font-small p,
+body.a11y-font-small span,
+body.a11y-font-small
+    div:not(svg):not(path):not(g):not(circle):not(rect):not(line):not(
+        polyline
+    ):not(polygon):not(ellipse),
+body.a11y-font-small a,
+body.a11y-font-small button,
+body.a11y-font-small input,
+body.a11y-font-small textarea,
+body.a11y-font-small select,
+body.a11y-font-small label,
+body.a11y-font-small li,
+body.a11y-font-small td,
+body.a11y-font-small th {
+    font-size: 14px !important;
+}
+
+body.a11y-font-small h1 {
+    font-size: 1.75rem !important;
+}
+body.a11y-font-small h2 {
+    font-size: 1.5rem !important;
+}
+body.a11y-font-small h3 {
+    font-size: 1.25rem !important;
+}
+body.a11y-font-small h4 {
+    font-size: 1.125rem !important;
+}
+body.a11y-font-small h5 {
+    font-size: 1rem !important;
+}
+body.a11y-font-small h6 {
+    font-size: 0.875rem !important;
+}
+
+/* Section headings, progress titles, and news titles */
+body.a11y-font-small .section-heading,
+body.a11y-font-small .section-heading *,
+body.a11y-font-small .section-heading__title,
+body.a11y-font-small .section-heading__eyebrow,
+body.a11y-font-small .progress-title-box,
+body.a11y-font-small .progress-title-box *,
+body.a11y-font-small .news-title,
+body.a11y-font-small .news-title *,
+body.a11y-font-small h1.section-heading__title,
+body.a11y-font-small h2.section-heading__title,
+body.a11y-font-small h3.section-heading__title,
+body.a11y-font-small span.section-heading__title,
+body.a11y-font-small span.section-heading__eyebrow {
+    font-size: 14px !important;
+}
+body.a11y-font-small p {
+    font-size: 14px !important;
+}
+body.a11y-font-small span {
+    font-size: 14px !important;
+}
+body.a11y-font-small div {
+    font-size: 14px !important;
+}
+body.a11y-font-small a {
+    font-size: 14px !important;
+}
+body.a11y-font-small button {
+    font-size: 14px !important;
+}
+body.a11y-font-small input {
+    font-size: 14px !important;
+}
+body.a11y-font-small textarea {
+    font-size: 14px !important;
+}
+body.a11y-font-small select {
+    font-size: 14px !important;
+}
+body.a11y-font-small label {
+    font-size: 14px !important;
+}
+/* Card titles and content - ensure they scale properly */
+body.a11y-font-small .news-title,
+body.a11y-font-small .news-title *,
+body.a11y-font-small .news-card-content,
+body.a11y-font-small .news-card-content *,
+body.a11y-font-small .card-title,
+body.a11y-font-small .card-title *,
+body.a11y-font-small .card-content,
+body.a11y-font-small .card-content * {
+    font-size: 14px !important;
+}
+
+/* Indicator values - scale proportionally */
+body.a11y-font-small .indicator-stat-value {
+    font-size: 42px !important;
+}
+
+body.a11y-font-small .indicator-layanan-value {
+    font-size: 42px !important;
+}
+
+body.a11y-font-small .indicator-stat-label,
+body.a11y-font-small .indicator-layanan-label-small,
+body.a11y-font-small .indicator-layanan-label-large {
+    font-size: 14px !important;
+}
+
+body.a11y-font-large {
+    font-size: 20px !important;
+}
+
+/* Apply to text elements only, exclude SVG and media */
+body.a11y-font-large p,
+body.a11y-font-large span,
+body.a11y-font-large
+    div:not(svg):not(path):not(g):not(circle):not(rect):not(line):not(
+        polyline
+    ):not(polygon):not(ellipse),
+body.a11y-font-large a,
+body.a11y-font-large button,
+body.a11y-font-large input,
+body.a11y-font-large textarea,
+body.a11y-font-large select,
+body.a11y-font-large label,
+body.a11y-font-large li,
+body.a11y-font-large td,
+body.a11y-font-large th {
+    font-size: 20px !important;
+}
+
+/* Hero section titles - scale up properly */
+body.a11y-font-large .hero-slide-content h1 {
+    font-size: 4rem !important;
+}
+body.a11y-font-large .hero-slide-content p {
+    font-size: 1.5rem !important;
+}
+
+body.a11y-font-large h1 {
+    font-size: 2.75rem !important;
+}
+body.a11y-font-large h2 {
+    font-size: 2.25rem !important;
+}
+body.a11y-font-large h3 {
+    font-size: 2rem !important;
+}
+body.a11y-font-large h4 {
+    font-size: 1.75rem !important;
+}
+body.a11y-font-large h5 {
+    font-size: 1.5rem !important;
+}
+body.a11y-font-large h6 {
+    font-size: 1.25rem !important;
+}
+
+/* Section headings, progress titles, and news titles */
+body.a11y-font-large .section-heading,
+body.a11y-font-large .section-heading *,
+body.a11y-font-large .section-heading__title,
+body.a11y-font-large .section-heading__eyebrow,
+body.a11y-font-large .progress-title-box,
+body.a11y-font-large .progress-title-box *,
+body.a11y-font-large .news-title,
+body.a11y-font-large .news-title *,
+body.a11y-font-large h1.section-heading__title,
+body.a11y-font-large h2.section-heading__title,
+body.a11y-font-large h3.section-heading__title,
+body.a11y-font-large span.section-heading__title,
+body.a11y-font-large span.section-heading__eyebrow {
+    font-size: 20px !important;
+}
+body.a11y-font-large p {
+    font-size: 20px !important;
+}
+body.a11y-font-large span {
+    font-size: 20px !important;
+}
+body.a11y-font-large div {
+    font-size: 20px !important;
+}
+body.a11y-font-large a {
+    font-size: 20px !important;
+}
+body.a11y-font-large button {
+    font-size: 20px !important;
+}
+body.a11y-font-large input {
+    font-size: 20px !important;
+}
+body.a11y-font-large textarea {
+    font-size: 20px !important;
+}
+body.a11y-font-large select {
+    font-size: 20px !important;
+}
+body.a11y-font-large label {
+    font-size: 20px !important;
+}
+/* Card titles and content - ensure they scale properly */
+body.a11y-font-large .news-title,
+body.a11y-font-large .news-title *,
+body.a11y-font-large .news-card-content,
+body.a11y-font-large .news-card-content *,
+body.a11y-font-large .card-title,
+body.a11y-font-large .card-title *,
+body.a11y-font-large .card-content,
+body.a11y-font-large .card-content * {
+    font-size: 20px !important;
+}
+
+/* Indicator values - scale proportionally */
+body.a11y-font-large .indicator-stat-value {
+    font-size: 70px !important;
+}
+
+body.a11y-font-large .indicator-layanan-value {
+    font-size: 70px !important;
+}
+
+body.a11y-font-large .indicator-stat-label,
+body.a11y-font-large .indicator-layanan-label-small,
+body.a11y-font-large .indicator-layanan-label-large {
+    font-size: 20px !important;
+}
+
+/* High Contrast Mode - Grayscale (Hitam Putih) */
+/* Apply grayscale to html element, then exclude specific elements */
+html.a11y-high-contrast {
+    filter: grayscale(100%) !important;
+    -webkit-filter: grayscale(100%) !important;
+    -moz-filter: grayscale(100%) !important;
+    -ms-filter: grayscale(100%) !important;
+    -o-filter: grayscale(100%) !important;
+}
+
+/* Explicitly exclude hero section and its children from any filter */
+html.a11y-high-contrast #hero-slider,
+html.a11y-high-contrast section#hero-slider,
+html.a11y-high-contrast .hero-slider,
+html.a11y-high-contrast .hero-slide,
+html.a11y-high-contrast .hero-slide-content,
+html.a11y-high-contrast .hero-slide-content *,
+html.a11y-high-contrast .hero-slider-nav,
+html.a11y-high-contrast .hero-slider-dot,
+html.a11y-high-contrast .hero-slider-controls,
+html.a11y-high-contrast .hero-slider-controls * {
+    filter: none !important;
+    -webkit-filter: none !important;
+    -moz-filter: none !important;
+    -ms-filter: none !important;
+    -o-filter: none !important;
+}
+
+/* Exclude floating button and accessibility menu from grayscale */
+html.a11y-high-contrast .a11y-floating-button,
+html.a11y-high-contrast .a11y-floating-button * {
+    filter: none !important;
+    -webkit-filter: none !important;
+    -moz-filter: none !important;
+    -ms-filter: none !important;
+    -o-filter: none !important;
+}
+
+/* Ensure floating button stays fixed and visible */
+.a11y-floating-button {
+    position: fixed !important;
+    bottom: 1.5rem !important;
+    right: 1.5rem !important;
+    top: auto !important;
+    left: auto !important;
+    z-index: 99999 !important;
+    transform: none !important;
+    will-change: auto !important;
+}
+
+/* Large Cursor - Black cursor with large size */
+body.a11y-large-cursor,
+body.a11y-large-cursor * {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z" fill="%23000000" stroke="%23FFFFFF" stroke-width="0.5"/></svg>')
+            0 0,
+        auto !important;
+}
+
+body.a11y-large-cursor a,
+body.a11y-large-cursor button,
+body.a11y-large-cursor input,
+body.a11y-large-cursor textarea,
+body.a11y-large-cursor select,
+body.a11y-large-cursor [role="button"],
+body.a11y-large-cursor [onclick] {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z" fill="%23000000" stroke="%23FFFFFF" stroke-width="0.5"/></svg>')
+            0 0,
+        pointer !important;
+}
+
+/* Line Spacing - Exclude SVG and chart elements */
+.a11y-line-spacing p:not(svg *):not([class*="apexcharts"] *),
+.a11y-line-spacing li:not(svg *):not([class*="apexcharts"] *),
+.a11y-line-spacing span:not(svg *):not([class*="apexcharts"] *),
+.a11y-line-spacing
+    div:not(svg *):not([class*="apexcharts"] *):not(.apexcharts-canvas) {
+    line-height: 2 !important;
+}
+
+.a11y-line-spacing h1:not(svg *),
+.a11y-line-spacing h2:not(svg *),
+.a11y-line-spacing h3:not(svg *),
+.a11y-line-spacing h4:not(svg *),
+.a11y-line-spacing h5:not(svg *),
+.a11y-line-spacing h6:not(svg *) {
+    line-height: 1.8 !important;
+    margin-bottom: 1.5rem !important;
+}
+
+/* Force normal line-height for all SVG and chart elements */
+.a11y-line-spacing svg,
+.a11y-line-spacing svg *,
+.a11y-line-spacing #spbeIndexChart,
+.a11y-line-spacing #spbeIndexChart *,
+.a11y-line-spacing .apexcharts-canvas,
+.a11y-line-spacing .apexcharts-canvas *,
+.a11y-line-spacing [class*="apexcharts"],
+.a11y-line-spacing [class*="apexcharts"] *,
+.a11y-line-spacing tspan,
+.a11y-line-spacing text {
+    line-height: 1 !important;
+    letter-spacing: normal !important;
+}
+
+/* Fix card overflow when line spacing is enabled */
+.a11y-line-spacing .news-card {
+    height: auto !important;
+    min-height: 400px !important;
+}
+
+.a11y-line-spacing .news-card-content {
+    padding: 16px 18px !important;
+    min-height: 120px !important;
+}
+
+.a11y-line-spacing .news-title {
+    -webkit-line-clamp: unset !important;
+    line-clamp: unset !important;
+    overflow: visible !important;
+    margin-bottom: 12px !important;
+}
+
+/* Only expand indicator cards, not progress cards */
+.a11y-line-spacing .dual-tone-section--indikator .progress-card {
+    height: auto !important;
+    aspect-ratio: unset !important;
+    min-height: 400px !important;
+}
+
+.a11y-line-spacing .dual-tone-section--indikator .progress-content-box {
+    height: auto !important;
+    aspect-ratio: unset !important;
+    min-height: 350px !important;
+    padding: 20px !important;
+}
+
+.a11y-line-spacing .indicator-stats-content {
+    padding: 40px 24px !important;
+    gap: 50px !important;
+}
+
+/* Focus Indicators (Enhanced) */
+.a11y-high-contrast *:focus,
+.a11y-large-cursor *:focus {
+    outline: 4px solid #ffff00 !important;
+    outline-offset: 3px !important;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    .a11y-font-small,
+    .a11y-font-large,
+    .a11y-high-contrast,
+    .a11y-large-cursor,
+    .a11y-line-spacing {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Ensure accessibility menu is always visible */
+[x-cloak] {
+    display: none !important;
+}
+
+/* Additional fix: Ensure hero slider maintains proper z-index and visibility */
+html.a11y-high-contrast #hero-slider {
+    isolation: isolate !important;
+}
+
+html.a11y-high-contrast .hero-slide {
+    filter: none !important;
+    -webkit-filter: none !important;
+}
+
+html.a11y-high-contrast .hero-slide.active {
+    opacity: 1 !important;
+    z-index: 2 !important;
+}
+
+/* Ensure hero slide content is visible when active - don't override transitions */
+html.a11y-high-contrast .hero-slide.active .hero-slide-content {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html.a11y-high-contrast .hero-slide:not(.active) .hero-slide-content {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Additional SVG text exclusions - prevent rotation */
+body.a11y-line-spacing svg text,
+body.a11y-line-spacing svg tspan,
+body.a11y-line-spacing .apexcharts-text,
+body.a11y-line-spacing .apexcharts-yaxis-label,
+body.a11y-line-spacing .apexcharts-xaxis-label,
+body.a11y-line-spacing .apexcharts-datalabel {
+    line-height: 1 !important;
+    transform: none !important;
+}
+
+/* Prevent any transform on chart text elements */
+body.a11y-line-spacing .apexcharts-yaxis text {
+    transform: rotate(0deg) !important;
+}
