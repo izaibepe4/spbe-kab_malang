@@ -71,18 +71,6 @@ Aplikasi ini dilengkapi dengan fitur keamanan standar industri:
 -   Automated database backup harian
 -   Audit trail untuk aktivitas user
 
-## Dokumentasi
-
-Dokumentasi lengkap tersedia di folder `documentation/`:
-
-1. **01_PANDUAN_UTAMA.md** - Panduan instalasi dan setup
-2. **02_REFERENSI_CEPAT.md** - Command shortcuts untuk developer
-3. **03_PANDUAN_TESTING.md** - Panduan testing aplikasi
-4. **04_PANDUAN_DEPLOYMENT.md** - Panduan deployment production
-5. **05_PANDUAN_KONTRIBUSI.md** - Panduan untuk kontributor
-6. **06_KEBIJAKAN_KEAMANAN.md** - Kebijakan keamanan sistem
-7. **07_SETUP_RECAPTCHA_SMTP.txt** - Setup reCAPTCHA dan SMTP
-
 ## Tim Pengembang
 
 Aplikasi ini dikembangkan oleh:
